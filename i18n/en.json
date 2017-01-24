@@ -1,0 +1,10 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular 2 with ng2-translate!",
+    "SELECT": "Change language"
+  },
+
+  "LOGIN": {
+    "SIGN_IN": "Sign in"
+  }
+}
