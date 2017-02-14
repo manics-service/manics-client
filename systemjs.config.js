@@ -1,7 +1,9 @@
 ﻿(function (global) {
     System.config({
         paths: {
-            'npm:': 'node_modules/'
+            'npm:': 'node_modules/',
+            "ng2-bootstrap":   "node_modules/ng2-bootstrap"
+
         },
         map: {
             app: 'app',
@@ -18,6 +20,8 @@
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+            '@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+            '@angular/material': 'npm:@angular/material/bundles/material.umd.js'
         },
         packages: {
             'ng2-translate': {main: 'bundles/ng2-translate.umd.js', defaultExtension: 'js'},
@@ -31,6 +35,9 @@
             'angular2-in-memory-web-api': {
                 main: './index.js',
                 defaultExtension: 'js'
+            },
+            "node_modules/ng2-bootstrap": {
+                "defaultExtension": "js"
             }
         }
     });

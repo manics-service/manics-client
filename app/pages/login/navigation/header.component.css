@@ -1,0 +1,9 @@
+.header {
+    height: 61px;
+    width: auto;
+}
+
+.header__menu {
+    padding: 0.9em 1em 0.5em;
+}
+

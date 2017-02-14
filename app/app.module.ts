@@ -4,22 +4,30 @@ import { FormsModule }    from '@angular/forms';
 
 import { AppComponent } from "./app.component";
 
-import { NavigationComponent } from "./pages/login-page/navigation/navigation.component";
+import { HeaderComponent } from "./pages/login/navigation/header.component";
 import { AppRoutingModule }  from './app.routing';
-import { LoginComponent } from './pages/login-page/login/login.component'
-import {TranslateModule} from "ng2-translate";
+import { LoginComponent } from './pages/login/login-form/login.component'
+import {MainComponent} from "./pages/login/main.component";
+import {MaterialModule} from "@angular/material";
+import {RegisterComponent} from "./pages/login/register-form/register.component";
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         AppRoutingModule,
-        TranslateModule.forRoot()
+        MaterialModule.forRoot()
     ],
     declarations: [
         LoginComponent,
+        RegisterComponent,
         AppComponent,
-        NavigationComponent
+        MainComponent,
+        HeaderComponent
+    ],
+    entryComponents: [
+        LoginComponent,
+        RegisterComponent
     ],
     providers: [
     ],
